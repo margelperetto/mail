@@ -67,9 +67,9 @@ public class JFEmail extends JFrame{
 		add(new JLabel("Senha"), new CC().wrap());
 		add(jpfPass, new CC().width("250:100%:").wrap());
 		add(jcbSalvarSenha, new CC().wrap());
-		add(new JLabel("SMTP"), new CC().wrap());
+		add(new JLabel("Servidor SMTP"), new CC().wrap());
 		add(jtfSmtp, new CC().width("250:100%:").wrap());
-		add(new JLabel("Port"), new CC().wrap());
+		add(new JLabel("Porta"), new CC());
 		add(jsPort, new CC().width("80"));
 		add(jcbStartTLS, new CC().wrap());
 		add(new JSeparator(), new CC().width("0:100%:").wrap());
@@ -89,6 +89,7 @@ public class JFEmail extends JFrame{
 		setMinimumSize(getSize());
 		setLocationRelativeTo(null);
 		setTitle("Enviar e-mail");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		loadFromProperties();
 	}
