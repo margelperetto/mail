@@ -145,7 +145,7 @@ public class JFEmail extends JFrame{
 			PropertiesUtils.saveProperties();
 		} catch (Exception e) {
 			e.printStackTrace();
-			JOptionPane.showMessageDialog(JFEmail.this, "Erro ao carregar informações! \n"+e.getMessage(), "Erro!", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(JFEmail.this, "Erro ao salvar informações! \n"+e.getMessage(), "Erro!", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
@@ -237,7 +237,7 @@ public class JFEmail extends JFrame{
 
 			} catch (Exception e) {
 				e.printStackTrace();
-				JOptionPane.showMessageDialog(JFEmail.this, "ERRO! \n"+e.getMessage(), "MSG", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(JFEmail.this, "Erro ao enviar e-mail! \n"+e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 	}
